@@ -39,26 +39,22 @@ newToDoPopUpBtn.addEventListener('click', () => {
 
 // toggle to new todo in pop up window
 addNewtoDoBtn.addEventListener('click', () => {
-  console.log('works');
   projectPopUpContainer.classList.add('hidden');
   toDoPopUpContainer.classList.remove('hidden');
 });
 
 // toggle to new todo in pop up window
 addNewProjectBtn.addEventListener('click', () => {
-  console.log('works');
   projectPopUpContainer.classList.remove('hidden');
   toDoPopUpContainer.classList.add('hidden');
 });
 addNewtoDoBtn2.addEventListener('click', () => {
-  console.log('works');
   projectPopUpContainer.classList.add('hidden');
   toDoPopUpContainer.classList.remove('hidden');
 });
 
 // toggle to new todo in pop up window
 addNewProjectBtn2.addEventListener('click', () => {
-  console.log('works');
   projectPopUpContainer.classList.remove('hidden');
   toDoPopUpContainer.classList.add('hidden');
 });

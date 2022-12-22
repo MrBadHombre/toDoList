@@ -35,8 +35,8 @@ body {
   text-align: center;
   justify-content: space-evenly;
   display: grid;
-  grid-template-columns: 60px auto;
-  grid-template-rows: 60px 400px;
+  grid-template-columns: 60px 500px;
+  grid-template-rows: 60px 400px 60px;
   background-color: grey;
   position: absolute;
   top: 50%;
@@ -49,10 +49,24 @@ body {
   text-align: center;
   justify-content: space-evenly;
   display: grid;
-  grid-template-columns: 60px auto;
-  grid-template-rows: 60px 400px;
+  grid-template-columns: 60px 500px;
+  grid-template-rows: 60px 400px 60px;
   background-color: grey;
   position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+/* add project button on popup */
+.addPopUpBtns {
+  width: 10rem;
+  height: 2rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  position: relative;
   top: 50%;
   left: 50%;
 
