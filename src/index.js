@@ -1,6 +1,6 @@
 // imported modules
 import './style.css';
-import { createAllElements } from './createEntry';
+import { createAllElements, createProject } from './createEntry';
 
 // query selectors for html element variables
 const todayItem = document.querySelector('.todayItem');
@@ -16,6 +16,8 @@ const addNewProjectBtn = document.querySelector('.addNewProjectBtn');
 const addNewtoDoBtn = document.querySelector('.addNewToDoBtn');
 const addNewProjectBtn2 = document.querySelector('.addNewProjectBtn2');
 const addNewtoDoBtn2 = document.querySelector('.addNewToDoBtn2');
+const submitProjectBtn = document.querySelector('#submitProject');
+const submitToDo = document.querySelector('#submitToDo');
 
 let entry;
 let priority;
@@ -58,3 +60,5 @@ addNewProjectBtn2.addEventListener('click', () => {
   projectPopUpContainer.classList.remove('hidden');
   toDoPopUpContainer.classList.add('hidden');
 });
+
+submitProjectBtn.addEventListener('click', createProject);
