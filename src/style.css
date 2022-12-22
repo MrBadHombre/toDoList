@@ -29,3 +29,40 @@ body {
   grid-column-start: 1;
   grid-column-end: 5;
 }
+
+.projectPopUpContainer {
+  width: 50vw;
+  text-align: center;
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 60px auto;
+  grid-template-rows: 60px 400px;
+  background-color: grey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+.toDoPopUpContainer {
+  width: 50vw;
+  text-align: center;
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 60px auto;
+  grid-template-rows: 60px 400px;
+  background-color: grey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.hiddenPopUp {
+  display: none;
+}

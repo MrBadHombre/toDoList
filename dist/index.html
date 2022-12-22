@@ -16,29 +16,37 @@
           <div id="todayBtn">Today</div>
           <div id="weekBtn">This Week</div>
         </div>
-
-
         <button id="addTask" type="button">New Project/ToDo</button>
       </div>
-<div class="thisWeekContainer">
-    <h3 id="thisWeekTitle>">This Week</h3>
-
-</div>
-<div class="todayContainer">
-    <h3 id="todayTitle>">Today</h3>
-    <div class="todayItem">placeholder</div>
-</div>
-
-</div>
-<div class="projectPopUpContainer">
-    <div id="projectPopUpBtns">
-        <button id="addNewProject">NEW PROJECT</button>
-        <button id="addNewToDo">NEW ToDo</button>
-    </div>
-    <div id="projectPopUpForm">
-        <input type="text" id="projectPopUpTitle" placeholder="Project Title" />
-
+      <div class="thisWeekContainer">
+        <h3 id="thisWeekTitle>">This Week</h3>
       </div>
+      <div class="todayContainer">
+        <h3 id="todayTitle>">Today</h3>
+        <div class="todayItem">placeholder</div>
+      </div>
+    </div>
+    <!-- create new Project popup container -->
+    <div class="projectPopUpContainer hidden">
+      <div id="projectPopUpBtns">
+        <button class="addNewProjectBtn">NEW PROJECT</button>
+        <button class="addNewToDoBtn">NEW ToDo</button>
+      </div>
+      <div id="projectPopUpForm">
+        <input type="text" id="projectPopUpTitle" placeholder="Project Title" />
+      </div>
+    </div>
+    <!-- create new ToDo popup container -->
+    <div class="toDoPopUpContainer hidden">
+      <div id="toDOPopUpBtns">
+        <button class="addNewProjectBtn2">NEW PROJECT</button>
+        <button class="addNewToDoBtn2">NEW ToDo</button>
+      </div>
+      <div id="toDoPopUpForm">
+        <input type="text" id="toDoPopUpTitle" placeholder="toDo Title" />
+        <input type="text" id="toDoPopUpDetails" placeholder="Details" />
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
