@@ -11,6 +11,7 @@ const divdiv = document.getElementById('divdiv');
 const projectPopUpContainer = document.querySelector('.projectPopUpContainer');
 const toDoPopUpContainer = document.querySelector('.toDoPopUpContainer');
 const newToDoPopUpBtn = document.querySelector('#addTask');
+const ProjectSideBarTitle = document.querySelector('.projectListItem');
 
 const addNewProjectBtn = document.querySelector('.addNewProjectBtn');
 const addNewtoDoBtn = document.querySelector('.addNewToDoBtn');
@@ -18,21 +19,18 @@ const addNewProjectBtn2 = document.querySelector('.addNewProjectBtn2');
 const addNewtoDoBtn2 = document.querySelector('.addNewToDoBtn2');
 const submitProjectBtn = document.querySelector('#submitProject');
 const submitToDo = document.querySelector('#submitToDo');
+const listItemsSideBar = document.querySelector('.projectListItem');
+
+const projectsSideBarContainer = document.querySelector(
+  '.projectsSideBarContainer'
+);
+const projectsBtnSideBar = document.querySelector('#projectsBtn');
 
 let entry;
 let priority;
 let arraaaay = [];
 
 //Event listeners
-
-// btn.addEventListener('click', () => {
-//   entry = entry;
-//   entry = createAllElements(toDo.value, description.value);
-//   arraaaay.push(entry);
-//   console.table(arraaaay);
-//   entry.createDivElement(entry);
-//   todayItem.innerHTML = `${toDo.value}`;
-// });
 
 // open create new popup
 newToDoPopUpBtn.addEventListener('click', () => {
@@ -62,3 +60,7 @@ addNewProjectBtn2.addEventListener('click', () => {
 });
 
 submitProjectBtn.addEventListener('click', createProject);
+
+projectsBtnSideBar.addEventListener('click', () => {
+  projectsSideBarContainer.classList.toggle('hidden');
+});

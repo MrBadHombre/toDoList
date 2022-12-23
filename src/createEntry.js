@@ -34,16 +34,34 @@ const createAllElements = function (
   };
 };
 // create new peoject entry
+let testArray = [];
 function createProject() {
-  const projectSubmitInput = document.querySelector('#projectPopUpTitle');
   const projectsSideBarContainer = document.querySelector(
     '.projectsSideBarContainer'
   );
+  const projectListContainer = document.createElement('div');
+  const projectSubmitInput = document.querySelector('#projectPopUpTitle');
+  const popUpProjectContainer = document.querySelector(
+    '.popUpProjectContainer'
+  );
   const projectListItem = document.createElement('div');
+  const projectPopUpItem = document.createElement('div');
   const projectTitleInput = projectSubmitInput;
+  projectsSideBarContainer.appendChild(projectListContainer);
+  projectListContainer.classList.add('projectListContainer');
   projectListItem.classList.add('projectListItem');
-  projectListItem.innerHTML = `<div>${projectTitleInput.value}</div>`;
-  projectsSideBarContainer.appendChild(projectListItem);
+  projectPopUpItem.classList.add('projectPopUpItem');
+
+  testArray.push(projectTitleInput.value);
+  testArray.forEach(() => {
+    projectListItem.innerHTML = `<div>${projectTitleInput.value}</div>`;
+    projectListContainer.appendChild(projectListItem);
+    popUpProjectContainer.appendChild(projectListItem);
+    projectPopUpItem.innerHTML = `<div>${projectTitleInput.value}</div>`;
+    projectListContainer.appendChild(projectListItem);
+    popUpProjectContainer.appendChild(projectPopUpItem);
+  });
+  console.log(testArray);
 }
 
 export { createAllElements, createProject };
