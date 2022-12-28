@@ -33,8 +33,8 @@ const createAllElements = function (
     createDivElement,
   };
 };
-// create new peoject entry
-let testArray = [];
+// create new project entry
+let projectArray = [];
 function createProject() {
   const projectsSideBarContainer = document.querySelector(
     '.projectsSideBarContainer'
@@ -52,8 +52,8 @@ function createProject() {
   projectListItem.classList.add('projectListItem');
   projectPopUpItem.classList.add('projectPopUpItem');
 
-  testArray.push(projectTitleInput.value);
-  testArray.forEach(() => {
+  projectArray.push(projectTitleInput.value);
+  projectArray.forEach(() => {
     projectListItem.innerHTML = `<div>${projectTitleInput.value}</div>`;
     projectListContainer.appendChild(projectListItem);
     popUpProjectContainer.appendChild(projectListItem);
@@ -61,7 +61,7 @@ function createProject() {
     projectListContainer.appendChild(projectListItem);
     popUpProjectContainer.appendChild(projectPopUpItem);
   });
-  console.log(testArray);
+  console.log(projectArray);
 }
 
 export { createAllElements, createProject };
