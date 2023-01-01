@@ -1,6 +1,6 @@
 // imported modules
 import './style.css';
-import { createAllElements, createProject } from './createEntry';
+import { createProject } from './createEntry';
 
 // query selectors for html element variables
 const todayItem = document.querySelector('.todayItem');
